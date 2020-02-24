@@ -18,6 +18,7 @@ class Creator
     gets_rails_version
     install_rails
     create_rails_app
+    copy_gemfile
   end
 
   def verify_rvm_installation
@@ -69,5 +70,9 @@ class Creator
 
   def create_rails_app
     @exec.create_rails_app
+  end
+
+  def copy_gemfile
+    @exec.copy_gemfile
   end
 end
